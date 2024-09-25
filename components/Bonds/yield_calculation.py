@@ -215,6 +215,5 @@ def show():
         bonds["Total Return after Taxes"].append(final_return)
 
     df = pd.DataFrame(bonds)
-    df.index = df.index + 1
 
-    st.dataframe(df, use_container_width=True)
+    st.dataframe(df, use_container_width=True, hide_index=True)
